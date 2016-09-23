@@ -35,7 +35,7 @@ occupations.pop('Total', None)
 occupations.pop('Job Class', None)
 
 def randomize():
-    return random.choice(occupations)
+    return random.choice(occupations.keys())
 
 #end helper functions
 
