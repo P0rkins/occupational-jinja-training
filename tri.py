@@ -28,7 +28,7 @@ def store(string):
         stripped = data.rstrip() #stripped data of /n
         temp = stripped.split(',')
         if is_number(temp[1]):
-            dictionary[temp[0]] = float(temp[1])
+            occupations[temp[0]] = float(temp[1])
 
 store(occupations) #create dictionary
 occupations.pop('Total', None)
