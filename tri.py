@@ -32,14 +32,17 @@ def store(string):
 
 store(occupations) #create dictionary
 occupations.pop('Total', None)
+occupations.pop('Job Class', None)
 
+def randomize():
+    return random.choice(occupations)
 
 #end helper functions
 
 
 @app.route("/occupations")
 def occupy():
-    return render_template( 'model.html', collection = occupations)
+    return render_template('model.html', collection = occupations, job = randomize())
     
 if __name__ == "__main__":
     #enable debugging, auto-restarting of server when this file is modified

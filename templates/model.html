@@ -2,14 +2,22 @@
 <html>
 
   <head>
-    <title> {{ foo }} </title>
+    <title>Big L's Unemployment Help Guide</title>
   </head>
-
+  </br>
   <body>
-    {% for item in collection %}
-     {{ item }}
-     <br>
-    {% endfor %}
+    <table>
+      {% for item in collection %}
+      <tr>
+	<td> {{ item }} </td>
+	<td> {{ collection[item] }} </td>
+      </tr>
+     {% endfor %}
+    </table>
+    </br>
+    </br>
+    <h2>Lorenz's fresh-out-of-college job generator!</h2>
+    <h3> {{ job }} </h3>
   </body>
 
 </html>
