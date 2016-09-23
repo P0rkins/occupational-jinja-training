@@ -15,6 +15,7 @@ def hello_world():
 
 occupations = {}
 
+#helper functions
 def is_number(s):
     try:
         float(s)
@@ -29,8 +30,11 @@ def store(string):
         if is_number(temp[1]):
             dictionary[temp[0]] = float(temp[1])
 
-store(occupations)
+store(occupations) #create dictionary
 occupations.pop('Total', None)
+
+
+#end helper functions
 
 
 @app.route("/occupations")
