@@ -47,4 +47,4 @@ def occupy():
 if __name__ == "__main__":
     #enable debugging, auto-restarting of server when this file is modified
     app.debug = True 
-app.run()
+    app.run()
