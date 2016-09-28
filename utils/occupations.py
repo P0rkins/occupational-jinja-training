@@ -12,7 +12,7 @@ def is_number(s):
         return False
 
 def store():
-    inStream = open('occupations.csv','r')
+    inStream = open('../data/occupations.csv','r')
     occupation = inStream.readlines()
     inStream.close()
     dic = {}
